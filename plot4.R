@@ -1,3 +1,4 @@
+### read in data
 powerDataRaw = data.table::fread(input = '~/Downloads/household_power_consumption.txt', sep = ';')
 
 dates = c('1/2/2007','2/2/2007')
@@ -45,3 +46,7 @@ plot(powerData$datetime, powerData$Global_reactive_power, type = 'n'
 lines(powerData$datetime, powerData$Global_reactive_power)
 
 dev.off()
+
+
+
+
